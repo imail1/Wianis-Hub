@@ -4,7 +4,7 @@ local Window = OrionLib:MakeWindow({Name = "Wianis Hub"})
 
 
 local Tab = Window:MakeTab({
-	Name = "Hubs",
+	Name = "Scripts",
 	Icon = "rbxassetid://4483345998"
 })
 
@@ -25,27 +25,11 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "Sky Hub",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/SkyHub.txt"))()
-  	end    
-})
-
-Tab:AddButton({
 	Name = "Nut Hub",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Qrto1/working/main/pc"))()
   	end    
 })
-
-
-
-local Tab = Window:MakeTab({
-	Name = "Scripts",
-	Icon = "rbxassetid://4483345998"
-})
-
-
 
 Tab:AddButton({
 	Name = "Nameless Admin",
@@ -62,25 +46,26 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "Eazvy Custom Emotes",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Eazvy/public-scripts/main/Universal_Animations_Emotes.lua"))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Ultimate Trolling GUI",
-	Callback = function()
-		    loadstring(game:HttpGet("https://gist.githubusercontent.com/dark-modz/3e50ce0fdd03713dfbeb1845ee6f52d7/raw/630318908f56a984db9568a89e33eadb7998158a/feutg1",true))()
-  	end    
-})
-
-Tab:AddButton({
 	Name = "Infinite Yield",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
   	end    
 })
+
+local Tab = Window:MakeTab({
+	Name = "Settings",
+	Icon = "rbxassetid://4483345998"
+})
+
+Tab:AddButton({
+	Name = "Unload Menu",
+	Callback = function()
+      		OrionLib:Destroy()
+  	end    
+})
+
+Tab:AddLabel("Wianis Tarafından Yapılmıştır BTW")
+Tab:AddLabel("Version 9.8")
 
 
 
