@@ -64,8 +64,8 @@ Tab:AddButton({
   	end    
 })
 
-Tab:AddLabel("Wianis Tarafından Yapılmıştır BTW")
-Tab:AddLabel("Version 9.8")
+Tab:AddLabel("Made By Wianis BTW :>")
+Tab:AddLabel("Current Version 9.8")
 
 
 
